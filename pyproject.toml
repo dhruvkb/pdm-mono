@@ -1,0 +1,15 @@
+[project]
+name = "pdm-mono"
+version = "0.0.0"
+
+dependencies = []
+requires-python = "==3.12.*"
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "-e greet-lib @ file:///${PROJECT_ROOT}/packages/greet-lib",
+    "-e greet-cli @ file:///${PROJECT_ROOT}/greet-cli",
+]

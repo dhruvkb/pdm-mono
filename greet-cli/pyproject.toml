@@ -1,0 +1,21 @@
+[project]
+name = "greet-cli"
+version = "0.0.0" # required; But this is an application, not a library.
+
+dependencies = [
+  "greet-lib"
+]
+requires-python = "==3.12.*"
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+test = [
+  "pytest >=7.4.4, <8",
+  "pytest-raises ==0.11",
+  "pytest-sugar >=0.9.7, <0.10",
+]
+wip = [
+  "ipython >=8.22.1, <9",
+]
